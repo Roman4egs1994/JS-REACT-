@@ -1,10 +1,10 @@
 "use strict";
 //                                                      УСЛОВИЯ
-if (4 == 5 ) {
+/*if (4 == 5 ) {
   console.log('ok!');
 } else {
   console.log('Error');
-}
+}*/
 
 
 /*const num = 50;
