@@ -1,13 +1,13 @@
 "use strict";
 //                                                      УСЛОВИЯ
-/*if (4 == 5 ) {
+if (4 == 5 ) {
   console.log('ok!');
 } else {
   console.log('Error');
-}*/
+}
 
 
-/*const num = 50;
+const num = 50;
 
  if (num < 49) {
   console.log('Errors');
@@ -18,9 +18,9 @@
  }
 
  (num === 50) ? console.log('Оk!') : console.log('Error');  //Тернарный оператор 
- */
  
- /*const num = 50;                                        // Конструкция SWITCH , строго ищет значение
+ 
+ const num = 50;                                        // Конструкция SWITCH , строго ищет значение
  switch (num) {
   case 49:
     console.log('неверно');
@@ -34,4 +34,4 @@
   default:
       console.log('Не в этот раз');
       break;
- }*/
+ }
