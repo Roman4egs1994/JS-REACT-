@@ -5,9 +5,9 @@ let numberOfFilm;
 function start() {
     numberOfFilm = +prompt('Cколько фильмов вы уже посмотрели?', '');
 
-    while (numberOfFilm == '' || numberOfFilm == null || isNaN(numberOfFilm) ) {
+    while (numberOfFilm == '' || numberOfFilm == null || isNaN(numberOfFilm) ) { 
         numberOfFilm = +prompt('Cколько фильмов вы уже посмотрели?', '');
-    };
+    }
 }
 start();
 
@@ -16,7 +16,7 @@ const  personalMovieDB = {
     movies: {},
     actors: {},
     geners: [],
-    privat: false,
+    privat: false
 };
   
 
@@ -36,7 +36,7 @@ function rememberMyFilms() {
         }
     }
 }
-rememberMyFilms();
+//rememberMyFilms();
 
 
 
@@ -51,7 +51,30 @@ function detectPersonalLevel() {
         alert('Вы ошибка в этой жизни');
     }
 }
-detectPersonalLevel();
+//detectPersonalLevel();
+
+// РЕШЕНИЕ  УЧИТЕЛЯ 
+//function showMyDB (hidden) {
+//   if (!hidden) {
+//        console.log(personalMovieDB);
+//    }
+//}
+//showMyDB(personalMovieDB.privat);
+
+function showMyDB () {
+    if (personalMovieDB.privat == false) {
+        console.log(personalMovieDB);
+    } else {
+        console.log('Данная база закрыта настройками приватности');
+    }
+}
+showMyDB();
 
 
-console.log(personalMovieDB);
+function writeYourGenres() {
+    for (let i = 1; i <= 3 ; i++ ) {
+        const c = prompt (`Ваш любимый жанр под номером ${i}`);
+        personalMovieDB.geners[i - 1] = c;  //Возврат на -1 , что бы в базу не добавлялось пустое поле , так как счисление начинается с "0"
+    }
+}
+writeYourGenres();
