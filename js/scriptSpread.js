@@ -90,3 +90,14 @@ const vidio = ['youtube', 'vimeo', 'rutube'],
     const array = ["a", "b"];
     const newAarray = [...array];
     console.log(newAarray);
+
+
+
+    //Копирование обьекта
+    const q = {
+        one: 1,
+        two: 2
+    };
+
+    const newObj = {...q};
+    console.log(newObj)

@@ -32,7 +32,7 @@
 
 
 
-//Cортировка
+//Cортировка чисел
 const arr = [1, 2, 123, 3, 6, 8];
 arr.sort(compareNum);
 console.log(arr);
