@@ -19,7 +19,7 @@ const soldier = {
     }
 };
 
-const jonh = Object.create(soldier);
+const jonh = Object.create(soldier); //Создание  нового прототипа
 
 
 // const jonh = {
@@ -27,7 +27,7 @@ const jonh = Object.create(soldier);
 // };
 // // jonh.__proto__ = soldier; //Устаревший формат.
 
-// Object.setPrototypeOf(jonh, soldier);
+// Object.setPrototypeOf(jonh, soldier); 
 
 // console.log(jonh.armor);
 jonh.sayHello();
