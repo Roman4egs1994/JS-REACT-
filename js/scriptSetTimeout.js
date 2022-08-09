@@ -39,4 +39,4 @@ btn.addEventListener('click' , myAnimation );
 // let id = setTimeout(function log (){
 //     console.log('hello');
 //     id = setTimeout(log, 2000 );
-// }, 500); //Всегда будет ждать строго отведенное время    
+// }, 500); //Всегда будет ждать строго отведенное время            
