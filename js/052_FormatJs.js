@@ -11,12 +11,12 @@ const persone = {
     }
 };
 
-// console.log(JSON.stringify(persone)); //Метод отправки JSON
-// console.log(JSON.parse(JSON.stringify(persone))); //Получаем обьект обратно
+console.log(JSON.stringify(persone)); //Метод отправки JSON
+console.log(JSON.parse(JSON.stringify(persone))); //Получаем обьект обратно
 
 
-//Создание ГЛУБОКОГО КЛОНА
+//Создание ГЛУБОКОГО КЛОНА = копирование обьекта без изменений
 const clone = JSON.parse(JSON.stringify(persone)); //JSON.stringify(persone))  = превращает существующий обьект в формат JSON //JSON.parse = распарсит обратно в обьект 
-clone.parents.mom = 'Ann';
+clone.parents.mom = 'Ann'; //клонирование mom =  Ann
 console.log(persone);
 console.log(clone);
